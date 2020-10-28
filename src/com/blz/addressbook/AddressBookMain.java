@@ -15,7 +15,7 @@ public class AddressBookMain {
 		for (int i = 0; i < lst.size(); i++) {
 			if (lst.get(i).getFirstName().equalsIgnoreCase(firstName)) {
 				System.out.println("This name is already exists try with another name");
-				addAddressBook();
+				addPerson();
 				break;
 			}
 		}
@@ -70,7 +70,7 @@ public class AddressBookMain {
 	}
 
 	// UC5
-	public static void addAddressBook() {
+	public static void addPerson() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter how many AddressBook you want to add in system : ");
 		int noOfAddressBook = sc.nextInt();
@@ -96,7 +96,7 @@ public class AddressBookMain {
 	public static void main(String[] args) {
 		AddressBookMain oj = new AddressBookMain();
 		System.out.println("Welcome to Address Book Program..");
-		addAddressBook();
+		addPerson();
 		oj.searchByCity();
 	}
 
